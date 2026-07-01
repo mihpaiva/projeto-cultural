@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title> Moda e esporte </title>
+</head>
+<body>
+   <h1> Formulario de estilo e esportes </h1>
+   <p> Responda para ajudar no mapeamento de pendencias urbanas</p>
+     <p>
+    <a href="index.html">🏡 Home /Textos</a>| 
+    <a href="cultura.html">🎵 Música e Culinária</a> |
+    <a href="estilo.html">⚽ Moda e Esporte</a>
+</p>
+<hr>
+
+
+<form oninput="resultadoNota.value=notaEstilo.value"> 
+    <p>
+        <label for="nome">Nome completo</label>
+        <input type="text" id="nome" name="nome" placeholder="ex. yasmin paiva">
+    </p>
+    <p>
+<label for="e-mail">E-mail</label>
+        <input type="email" id="e-mail" name="e-mail" placeholder="ex. yasmin.paiva@provedor.com">
+    </p>
+    <p>
+        <label for="data-nasc">data-nasc</label>"
+        <input type="date" id="data-nasc" name="data-nasc">
+    </p>
+    <p>
+<label> Quais esportes e lazer você prática? (marcar quantos quiser)</label>
+<input type="checkbox" id ="futebol" name="esportes" value="futebol">
+<label for="esp1"> Futebol de Várzea/Quadra/</label><br>
+<input type="checkbox" id="esp2" name="esportes" value="skate">
+<label for="esp2"> Skate/ Patins </label><br>
+<input type="checkbox" id="esp3" name="esportes" value="basquete">
+<<label for="esp3">Basquete de rua</label><br>
+    </p>
+    <p>
+    <label for="marca"> Qual marca de roupa ou tênis você mais gosta?</label><br><br>
+    <input list="marcas" id="marca" name="marca" placeholder="Digite ou selecione...">
+    <datalist id="marcas">
+        <option value="Nike"></option>
+        <option value="All Star"></option>
+        <option value="Puma"></option>
+    </datalist>
+    </p>
+    <p>
+        <label for="instituicao"> Onde você foca seus estudos atualmente?</label><br>
+        <select id="instituicao" name="instituicao">
+            <optgroup label="Ensino Técnico Regular">
+                <option value="escola-publica"> Escola Estadual </option>
+                <option value="escola particar"> Escola Particular</option>
+            </optgroup>
+            <optgroup label="Ensino Superior">
+                <option value="faculdade"> Faculdade </option>
+                <option value="universidade"> Universidade </option>
+            </optgroup>
+        </select>
+    </p>
+</form>
+
+</body>
+</html>
